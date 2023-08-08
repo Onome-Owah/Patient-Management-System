@@ -1,0 +1,70 @@
+@model Patient
+
+<partial name="_BreadCrumbs" model=@(new [] {
+    ("/","Home"),
+    ("/patient","Patients"),
+    ("",$"{Model.Id}")
+}) />
+
+<div class="card rounded shadow p-4">
+    <h3 class="mb-4">Delete Patient <span class="ms-3 text-danger fs-5">Are you sure?</span></h3> 
+            <div>
+                <h2 class="mb-4 text-primary">Patient Details</h2>
+                <dl class="row">  
+                    <dt class="col-4 pb-1">Title</dt>
+                    <dd class="col-8 pb-1">@Model.Title</dd>
+
+                    <dt class="col-4 pb-1">Firstname</dt>
+                    <dd class="col-8 pb-1">@Model.FirstName</dd>
+
+                    <dt class="col-4 pb-1">Middlename</dt>
+                    <dd class="col-8 pb-1">@Model.MiddleName</dd>
+
+                    <dt class="col-4 pb-1">Surname</dt>
+                    <dd class="col-8 pb-1">@Model.Surname</dd>
+
+                    <dt class="col-4 pb-1">Dob</dt>
+                    <dd class="col-8 pb-1">@Model.Dob</dd>
+
+                    <dt class="col-4 pb-1">Age</dt>
+                    <dd class="col-8 pb-1">@Model.Age</dd>
+
+                    <dt class="col-4 pb-1">PhoneNo</dt>
+                    <dd class="col-8 pb-1">@Model.PhoneNo</dd>
+
+                    <dt class="col-4 pb-1">Sex</dt>
+                    <dd class="col-8 pb-1">@Model.Sex</dd>
+
+                    <dt class="col-4 pb-1">HouseNo</dt>
+                    <dd class="col-8 pb-1">@Model.HouseNo</dd>
+                    
+                    <dt class="col-4 pb-1">StreetName</dt>
+                    <dd class="col-8 pb-1">@Model.StreetName</dd>
+                    
+                    <dt class="col-4 pb-1">City</dt>
+                    <dd class="col-8 pb-1">@Model.City</dd>
+                    
+                    <dt class="col-4 pb-1">Postcode</dt>
+                    <dd class="col-8 pb-1">@Model.Postcode</dd>
+
+                    <dt class="col-4 pb-1">Ethnicity</dt>
+                    <dd class="col-8 pb-1">@Model.Ethnicity</dd>
+
+                    <dt class="col-4 pb-1">NIN</dt>
+                    <dd class="col-8 pb-1">@Model.Email</dd>
+
+                    <dt class="col-4 pb-1">Email</dt>
+                    <dd class="col-8 pb-1">@Model.Email</dd>
+                </dl>
+            </div>
+
+           <div class="mt-4">
+    <!-- form to submit post request to DeleteConfirm action     --> 
+    <form asp-action="DeleteConfirm" method="post" asp-route-id="@Model.Id">
+        <input type="hidden" asp-for="Id" class="form-control"/>
+        <button type="submit" class="btn btn-danger" aria-label="delete">Delete</button>
+        <a class="btn btn-secondary" asp-action="Details" asp-route-id="@Model.Id" >Cancel</a>
+    </form>
+  </div>
+</div>
+

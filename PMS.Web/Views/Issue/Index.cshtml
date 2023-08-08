@@ -1,0 +1,70 @@
+@model IssueSearchViewModel
+
+<partial name="_Breadcrumbs" model=@(new [] { 
+   ("/", "Home"), 
+   ("/issue", "Issues"), 
+   ("","Index") 
+})/>
+
+<div class="card rounded shadow p-4">
+  
+   <h3>Issues</h3>
+
+   <div class="my-4 d-flex flex-row justify-content-between align-items-center">  
+      <a asp-action="Create" class="btn btn-primary btn-sm">Create Issue</a>   
+      <partial name="_Search" /> <!-- add form to search ticket issues -->
+   </div>
+
+   <table class="table">
+      <thead>
+      <tr>
+         <th> 
+            Id 
+            <a asp-action="Index" asp-route-orderBy="IssueId" asp-route-direction="@Model.Direction">
+               <span asp-orderby=@Model.OrderBy asp-direction=@Model.Direction asp-field="issueid"></span>
+            </a>
+         </th>
+         <th> 
+            firstname
+            <a asp-action="Index" asp-route-orderBy="firstname" asp-route-direction="@Model.Direction">
+               <span asp-orderby=@Model.OrderBy asp-direction=@Model.Direction asp-field="firstname"></span>
+            </a>
+         </th>        
+         <th>
+            lastname
+            <a asp-action="Index" asp-route-orderBy="lastname" asp-route-direction="@Model.Direction">
+               <span asp-orderby=@Model.OrderBy asp-direction=@Model.Direction asp-field="lastname"></span>
+            </a>
+         </th>
+
+         <th>
+            Created
+            <a asp-action="Index" asp-route-orderBy="createdon" asp-route-direction="@Model.Direction">
+               <span asp-orderby=@Model.OrderBy asp-direction=@Model.Direction asp-field="CreatedOn"></span>
+            </a>
+         </th> 
+         <th>Issue</th> 
+         <th>Active</th>   
+         <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      @foreach(var I in Model.Issues) {
+         <tr>
+             <td>@(I.IssueId)</td>
+            <td>@(I.Patient.FirstName)</td>
+            <td>@(I.Patient.Surname)</td>
+            <td>@I.CreatedOn.ToShortDateString()</td>
+            <td>@I.CurrentConcern.Substring(0, I.CurrentConcern.Length < 20 ? I.CurrentConcern.Length : 20) ...</td>
+            <td>
+               <i asp-condition="@I.Active"    class="bi bi-toggle-on"></i>
+               <i asp-condition="@(!I.Active)" class="bi bi-toggle-off"></i>  
+            </td>
+            <td>
+               <a asp-action="Details" asp-route-id="@I.IssueId"><i class="bi bi-lightbulb"></i> Details</a>                                          
+            </td>
+         </tr>
+      }
+      </tbody>
+   </table>
+</div>

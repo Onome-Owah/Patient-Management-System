@@ -1,0 +1,103 @@
+@model Patient
+
+<partial name="_BreadCrumbs" model=@(new [] {
+    ("/","Home"),
+    ("/patient","Patients"),
+    ("",$"{Model.Id}")
+}) />
+
+<div class="card rounded shadow p-4">
+    <!-- Display patient details -->
+    <div class="row">
+        <!-- Details and Navigation -->
+        <div class="col-8 d-flex flex-column justify-content-between">
+            <!-- Patient details -->
+            <div>
+                <h2 class="mb-4 text-primary">Patient Details</h2>
+                <dl class="row">  
+                    <dt class="col-4 pb-1">Title</dt>
+                    <dd class="col-8 pb-1">@Model.Title</dd>
+
+                    <dt class="col-4 pb-1">Firstname</dt>
+                    <dd class="col-8 pb-1">@Model.FirstName</dd>
+
+                    <dt class="col-4 pb-1">Middlename</dt>
+                    <dd class="col-8 pb-1">@Model.MiddleName</dd>
+
+                    <dt class="col-4 pb-1">Surname</dt>
+                    <dd class="col-8 pb-1">@Model.Surname</dd>
+
+                    <dt class="col-4 pb-1">Dob</dt>
+                    <dd class="col-8 pb-1">@Model.Dob</dd>
+
+                    <dt class="col-4 pb-1">Age</dt>
+                    <dd class="col-8 pb-1">@Model.Age</dd>
+
+                    <dt class="col-4 pb-1">PhoneNo</dt>
+                    <dd class="col-8 pb-1">@Model.PhoneNo</dd>
+
+                    <dt class="col-4 pb-1">Sex</dt>
+                    <dd class="col-8 pb-1">@Model.Sex</dd>
+
+                    <dt class="col-4 pb-1">HouseNo</dt>
+                    <dd class="col-8 pb-1">@Model.HouseNo</dd>
+                    
+                    <dt class="col-4 pb-1">StreetName</dt>
+                    <dd class="col-8 pb-1">@Model.StreetName</dd>
+                    
+                    <dt class="col-4 pb-1">City</dt>
+                    <dd class="col-8 pb-1">@Model.City</dd>
+                    
+                    <dt class="col-4 pb-1">Postcode</dt>
+                    <dd class="col-8 pb-1">@Model.Postcode</dd>
+
+                    <dt class="col-4 pb-1">Ethnicity</dt>
+                    <dd class="col-8 pb-1">@Model.Ethnicity</dd>
+
+                    <dt class="col-4 pb-1">NIN</dt>
+                    <dd class="col-8 pb-1">@Model.NIN</dd>
+
+                    <dt class="col-4 pb-1">Email</dt>
+                    <dd class="col-8 pb-1">@Model.Email</dd>
+                </dl>
+            </div>
+
+            <!-- Navigation links -->
+            <div>               
+                <!-- navigation link to Index action -->
+                <a asp-action="Index" class="btn btn-sm btn-outline-primary" aria-label="patient list">
+                    <i class="bi bi-list" title="patient list"></i>
+                    <span class="ms-1 d-none d-md-inline">List</span>
+                </a>
+    
+                <!-- navigation link to Update action, passing the correct route id parameter --> 
+                <a asp-condition=@User.HasOneOfRoles("admin,support") asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-sm btn-outline-secondary" aria-label="edit patient">
+                    <i class="bi bi-pen-fill" title="edit patient"></i>
+                    <span class="ms-1 d-none d-md-inline">Edit</span>
+                </a>
+                               
+                
+                
+                <!-- alternate delete modal activation button --> 
+                <button asp-condition=@User.HasOneOfRoles("admin") type="button" class="btn btn-sm btn-outline-danger" aria-label="delete patient"
+                        data-bs-toggle="modal" data-bs-target="#deletePatientModal">
+                    <i class="bi bi-trash"></i> Delete
+                </button>
+
+
+                
+            </div>
+        </div>
+
+       
+
+    </div>    
+</div>
+
+ <!-- Tickets -->
+<div class="card rounded shadow p-4 mt-4">
+    <partial name="_Issues" />
+</div>
+
+<!-- Delete Modal -->
+<partial name="_DeleteModal" /> 
