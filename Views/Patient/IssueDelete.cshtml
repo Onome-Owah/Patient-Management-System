@@ -1,0 +1,52 @@
+@model Issue
+    
+<partial name="_BreadCrumbs" model=@(new [] {
+    ("/","Home"),
+    ("/patient","Patients"),
+    ($"/patient/details/{Model.PatientId}",$"{Model.PatientId}"),
+    ("",$"Delete Issue {Model.PatientId}")
+}) />
+
+<div class="card rounded shadow p-4">
+    <h3>Delete Concern <span class="ms-3 text-danger fs-5">Are you sure?</span></h3>
+
+    <!-- display the student using a <dl> as per Details.cshtml -->   
+    <dl class="row mt-3">       
+        <dt class="col-5">Title</dt>
+        <dd class="col-7">@Model.Patient.Title</dd>
+
+        <dt class="col-5">FirstName</dt>
+        <dd class="col-7">@Model.Patient.FirstName</dd>
+
+        <dt class="col-5">Surame</dt>
+        <dd class="col-7">@Model.Patient.Surname</dd>
+
+        <dt class="col-5">Concern</dt>
+        <dd class="col-7">@Model.CurrentConcern</dd>
+
+        <dt class="col-5">Length</dt>
+        <dd class="col-7">@Model.Length</dd>
+
+        <dt class="col-5">Severity</dt>
+        <dd class="col-7">@Model.Severity</dd>
+        
+        
+        <dt class="col-5">Created</dt>
+        <dd class="col-7">@Model.CreatedOn.ToShortDateString()</dd>
+        
+        <dt class="col-5">Active</dt>
+        <dd class="col-7">@Model.Active</dd>           
+    </dl>   
+
+    <div class="mt-4">
+        <!-- use a form with hidden input storing ticket id and studentId -->
+        <form asp-action="IssueDeleteConfirm" type="post">
+            <input type="hidden" asp-for="IssueId"/>
+            <input type="hidden" asp-for="PatientId"/>
+          
+            <button type="submit" class="btn btn-danger" aria-label="confirm">Confirm</button>
+            <a class="btn btn-secondary" asp-controller="Patient" asp-action="Details" asp-route-id="@Model.Patient.Id" aria-label="cancel" >Cancel</a>
+        </form>
+    </div>
+    
+</div>

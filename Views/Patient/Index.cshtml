@@ -1,0 +1,51 @@
+@model IList<Patient>
+
+<partial name="_BreadCrumbs" model=@(new [] {
+    ("/","Home"),
+    ("","Patients")
+}) />
+
+<div class="card border rounded shadow p-4">
+
+    <!-- Title bar -->
+    <div class="d-flex align-items-center justify-content-between">
+        <h3>Patient List</h3>
+        
+        <a asp-condition=@User.HasOneOfRoles("admin") class="btn btn-sm btn-primary" asp-action="create" title="add patient" aria-label="add patient">
+           <i class="bi bi-plus"></i> Create Profile
+        </a>
+    </div>
+
+    <!-- List of students -->
+    <table class="table table-hover mt-4">
+        <thead>
+            <tr>
+                <th><a asp-action="Index" asp-route-order="PatientId">#</a></th>
+                <th><a asp-action="Index" asp-route-order="FirstName">Name</a></th>
+                <th><a asp-action="Index" asp-route-order="Surname">Surname</a></th>
+                <th><a asp-action="Index" asp-route-order="Age">Age</a></th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var p in Model)
+            {
+                <tr>
+                    <td>@p.Id</td>
+                    <td>@p.FirstName</td>
+                    <td>@p.Surname</td>
+                    <td>@p.Age</td>
+                    <td>                       
+                        <a asp-action="Details" asp-route-id=@p.Id>
+                            <i class="bi bi-display-fill me-2" title="view patient" arial-label="view patient"></i>
+                        </a>
+                        <a asp-condition=@User.HasOneOfRoles("admin,support") asp-action="Edit" asp-route-id=@p.Id>
+                            <i class="bi bi-pencil-fill me-2" title="edit patient" aria-label="edit patient"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table> 
+
+</div>

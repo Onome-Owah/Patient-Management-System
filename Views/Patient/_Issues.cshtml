@@ -1,0 +1,68 @@
+@model Patient
+
+<div class="d-flex align-items-center justify-content-between">
+    <h4>Issues</h4>
+    <!-- navigation link to CreateTicket action, passing correct route parameter --> 
+    <a asp-action="IssueCreate" asp-route-id="@Model.Id" class="btn btn-sm btn-light" aria-label="create issue">
+        <i class="bi bi-bag-plus-fill" title="create issue"></i>
+        <span class="ms-1 d-none d-md-inline">Add Issue</span>
+    </a> 
+</div>
+
+<table class="table table-sm mt-2">
+    <thead>
+        <tr>          
+            <th>Concern</th>
+            <th>Severity</th>  
+            <th>CreatedOn</th>       
+            <th class="text-end">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Issues.Count == 0)
+        {
+            <tr>              
+                <td colspan="4">No issues...</td>
+            </tr>
+        }
+        else
+        {
+            @foreach(var I in Model.Issues) {
+                <tr>             
+                    <td>@I.CurrentConcern</td>
+                    <td>@I.Severity</td>  
+                    <td>                       
+                        @I.CreatedOn                  
+                    </td>
+                    <td class="text-end">
+                        @if (I.Active) {
+                            <a asp-condition="@I.Active" asp-action="IssueDelete" asp-route-id="@I.IssueId" class="btn btn-sm btn-outline-danger">
+                                <i class="bi bi-trash-fill" title="delete ticket"></i>
+                                <span class="ms-1 d-none d-md-inline">Delete</span>    
+                            </a>
+                        } else {
+                            <!-- use button to allow use of disable attribute -->
+                            <button disabled class="btn btn-sm btn-outline-warning">
+                                <i class="bi bi-trash-fill" title="delete ticket disabled"></i>
+                                <span class="ms-1 d-none d-md-inline">Delete</span>    
+                            </button>
+                        }
+                        @if (I.Active) {
+                            <a asp-action="IssueEdit" asp-route-id="@I.IssueId" class="btn btn-sm btn-outline-dark">
+                                <i class="bi bi-pen-fill" title="edit ticket"></i>
+                                <span class="ms-1 d-none d-md-inline">Edit</span>    
+                            </a>
+                        } else {
+                            <!-- use button to allow use of disable attribute -->
+                            <button disabled class="btn btn-sm btn-outline-warning">
+                                <i class="bi bi-pen-fill" title="edit issue disabled"></i>
+                                <span class="ms-1 d-none d-md-inline">Edit</span>    
+                            </button>
+                        }
+                    </td>             
+                </tr>
+                
+            }
+        }
+    </tbody>
+</table> 

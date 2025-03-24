@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: PMS-Web
+    env: dotnet
+    repo: https://github.com/Onome-Owah/Patient-Management-System
+    rootDir: PMS.Web
+    buildCommand: "dotnet restore && dotnet publish -c Release -o out"
+    startCommand: "dotnet out/PMS.Web.dll"
+    envVars:
+      - key: DATABASE_URL
+        value: "Data Source=app.db"
