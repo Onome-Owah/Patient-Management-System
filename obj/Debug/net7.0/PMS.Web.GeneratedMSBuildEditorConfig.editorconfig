@@ -16,6 +16,158 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Ib21lL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Ib21lL1ByaXZhY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Home/Secure.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Ib21lL1NlY3VyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Issue/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Jc3N1ZS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Issue/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Jc3N1ZS9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Issue/DetailsModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Jc3N1ZS9EZXRhaWxzTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Issue/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Jc3N1ZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Issue/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Jc3N1ZS9TZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Issue/_Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Jc3N1ZS9fU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Patient/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9QYXRpZW50L0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Patient/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9QYXRpZW50L0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Patient/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9QYXRpZW50L0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Patient/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9QYXRpZW50L0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Patient/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9QYXRpZW50L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Patient/IssueCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9QYXRpZW50L0lzc3VlQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Patient/IssueDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9QYXRpZW50L0lzc3VlRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Patient/IssueEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9QYXRpZW50L0lzc3VlRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Patient/_DeleteModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9QYXRpZW50L19EZWxldGVNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Patient/_Issues.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9QYXRpZW50L19Jc3N1ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Shared/Components/Paginator/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9TaGFyZWQvQ29tcG9uZW50cy9QYWdpbmF0b3IvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Shared/Components/SortOrder/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9TaGFyZWQvQ29tcG9uZW50cy9Tb3J0T3JkZXIvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9TaGFyZWQvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Shared/_Alert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9TaGFyZWQvX0FsZXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Shared/_BreadCrumbs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9TaGFyZWQvX0JyZWFkQ3J1bWJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9TaGFyZWQvX0xvZ2luUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9TaGFyZWQvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/User/ErrorNotAuthenticated.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Vc2VyL0Vycm9yTm90QXV0aGVudGljYXRlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/User/ErrorNotAuthorised.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Vc2VyL0Vycm9yTm90QXV0aG9yaXNlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/User/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Vc2VyL0ZvcmdvdFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Vc2VyL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Vc2VyL0xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Vc2VyL1JlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/User/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Vc2VyL1Jlc2V0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/User/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Vc2VyL1VwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/User/UpdatePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Vc2VyL1VwZGF0ZVBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/User/UpdateProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9Vc2VyL1VwZGF0ZVByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9fVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9fVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -167,6 +319,10 @@ build_metadata.AdditionalFiles.CssScope =
 [/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/PMS.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UE1TLldlYi9WaWV3cy9TaGFyZWQvX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-y6xo3n2zn0
 
 [/Users/onomeowah/Desktop/ANOTHER/PMS/PMS.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
